@@ -1,0 +1,9 @@
+target/
+*.class
+.idea/
+*.iml
+# Compiled shader bytecode is regenerable via shaders/compile-shaders.sh.
+# Keep the macOS/Metal bins committed so `mvn exec:java` runs the cube from a fresh clone;
+# ignore the other platforms' output (rebuild them when those backends are targeted).
+src/main/resources/shaders/*/
+!src/main/resources/shaders/metal/
